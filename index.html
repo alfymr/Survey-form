@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AMR</title>
+</head>
+<body class="bg-[url('img/bg.jpeg')] bg-no-repeat bg-cover bg-center font-mono">
+    <div class="bg-[#8888ceb3] bg-cover">
+        <div class="container mx-auto flex flex-col text-center mt-10 w-full ">
+            <h1 id="title" class="font-semibold leading-6 font-normal text-3xl text-white">freeCodeCamp Survey Form</h1>
+            <p id="description" class="text-lg mt-2 italic opacity-90 text-white">Thank you for taking the time to help us improve the platform</p>
+            <div class="flex justify-center mt-10">
+                <div class="w-5/12 bg-[#1b1b32cc] opacity-80 box-border p-10 rounded-sm ">
+                    <form id="survey-form" action="" class="space-y-1 flex flex-col flex-grow text-left rounded-md text-white text-lg">
+                        <label id="name-label" for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Enter your name" class="py-px pl-5 text-black rounded-md">
+                        <label id="email-label" for="name">Email</label>
+                        <input type="email" id="email" required placeholder="Enter your email" class="py-px pl-5 text-black rounded-md">
+                        <label id="number-label" for="age">Age (Optional)</label>
+                        <input type="number" id="number" min="10" max="99" placeholder="Age" class="py-px pl-5 text-black rounded-md">
+                        <label for="role">Which option best describes your current role?</label>
+                        <select name="role" id="dropdown" class="py-px pl-5 rounded-md text-black">
+                            <option value="" disabled selected>Select current role.</option>
+                            <option value="Student">Student</option>
+                            <option value="Fulltime job">Fulltime job</option>
+                            <option value="Fulltime Learner">Fulltime Learner</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <p>Would you recommend freeCodeCamp to a friend?</p>
+                        <div class="flex items-center space-x-1">
+                            <input type="radio" id="html" name="name" value="name ">
+                            <label for="html">Definitely</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="radio" id="css" name="name" value="name ">
+                            <label for="css">Maybe</label><br>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="radio" id="javascript" name="name" value="name ">
+                            <label for="javascript">Not sure</label>
+                        </div>
+                        <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+                        <select name="feature" id="feature" class="py-px pl-5 rounded-md text-black">
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="Challenges">Challenges</option>
+                            <option value="Projects">Projects</option>
+                            <option value="Community">Community</option>
+                            <option value="Open Source">Open Source</option>
+                        </select>
+                        <label for="feature">What would you like to see improved? (Check all that apply)</label>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="frontend" name="frontend" value="frontend">
+                            <label for="frontend">Front-end Projects</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="backend" name="backend" value="backend">
+                            <label for="backend">Back-end Projects</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="Data" name="Data" value="Data">
+                            <label for="Data">Data Visualization</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="Challenges" name="Challenges" value="Challenges">
+                            <label for="Challenges">Challenges</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="opensource" name="opensource" value="opensource">
+                            <label for="opensource">Open Source Community</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="gitter" name="gitter" value="gitter">
+                            <label for="gitter">Gitter help rooms</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="videos" name="videos" value="videos">
+                            <label for="videos">Videos</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="city" name="city" value="city">
+                            <label for="city">City Meetups</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="wiki" name="wiki" value="wiki">
+                            <label for="wiki">Wiki</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="forum" name="forum" value="forum">
+                            <label for="forum">Forum</label>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" id="additional" name="additional" value="additional">
+                            <label for="additional">Additional Courses</label>
+                        </div>
+                        <label for="additional">Any comments or suggestions?</label>
+                        <textarea class="py-5 text-black rounded-md" type="textarea" id="name" required placeholder="Enter Your Coment here.."></textarea>
+                        <div class="flex-col flex mt-5">
+                            <input type="submit" value="Submit" id="submit" class="bg-green-400 py-2  rounded-md mt-5">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </div>
+    </div>
+</body>
+</html>
