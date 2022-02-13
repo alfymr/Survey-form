@@ -10,13 +10,13 @@
 </head>
 
 <body class="bg-[url('img/background.jpeg')] bg-no-repeat bg-cover bg-center font-mono">
-    <div class="bg-[#8888ceb3] bg-cover">
-        <div class="container mx-auto flex flex-col text-center mt-10 w-full ">
-            <h1 id="title" class="font-semibold leading-6 font-normal text-3xl text-white">freeCodeCamp Survey Form</h1>
-            <p id="description" class="text-lg mt-2 italic opacity-90 text-white">Thank you for taking the time to help
+    <div class="bg-gradient-to-r from-[#3a3a9ecc] to-[#8888ceb3] h-full bg-cover">
+        <div class="container mx-auto my-auto flex flex-col text-center h-full w-full ">
+            <h1 id="title" class="font-semibold leading-6 font-normal mt-10 text-3xl text-white">freeCodeCamp Survey Form</h1>
+            <p id="description" class="text-md mt-2 italic opacity-90 text-white">Thank you for taking the time to help
                 us improve the platform</p>
             <div class="flex justify-center mt-10">
-                <div class="w-5/12 bg-[#1b1b32cc] opacity-80 box-border p-10 rounded-sm ">
+                <div class="w-5/12 bg-gradient-to-r opacity-80 from-[#1b1b32] to-[#1b1b32cc] box-border p-10 rounded-sm ">
                     <form id="survey-form" action=""
                         class="space-y-1 flex flex-col flex-grow text-left rounded-md text-white text-lg">
                         <label id="name-label" for="name">Name</label>
@@ -28,16 +28,16 @@
                         <label id="number-label" for="age">Age (Optional)</label>
                         <input type="number" id="number" min="10" max="99" placeholder="Age"
                             class="py-px pl-5 text-black rounded-md">
-                        <label for="role">Which option best describes your current role?</label>
+                        <label for="role" class="pt-5">Which option best describes your current role?</label>
                         <select name="role" id="dropdown" class="py-px pl-5 rounded-md text-black">
-                            <option value="" disabled selected>Select current role.</option>
+                            <option value="" disabled selected>Select current role</option>
                             <option value="Student">Student</option>
                             <option value="Fulltime job">Fulltime job</option>
                             <option value="Fulltime Learner">Fulltime Learner</option>
                             <option value="Prefer not to say">Prefer not to say</option>
                             <option value="Other">Other</option>
                         </select>
-                        <p>Would you recommend freeCodeCamp to a friend?</p>
+                        <p class="pt-5">Would you recommend freeCodeCamp to a friend?</p>
                         <div class="flex items-center space-x-1">
                             <input type="radio" id="html" name="name" value="name ">
                             <label for="html">Definitely</label>
@@ -50,7 +50,7 @@
                             <input type="radio" id="javascript" name="name" value="name ">
                             <label for="javascript">Not sure</label>
                         </div>
-                        <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+                        <label for="feature" class="pt-5">What is your favorite feature of freeCodeCamp?</label>
                         <select name="feature" id="feature" class="py-px pl-5 rounded-md text-black">
                             <option value="" disabled selected>Select an option</option>
                             <option value="Challenges">Challenges</option>
@@ -58,7 +58,7 @@
                             <option value="Community">Community</option>
                             <option value="Open Source">Open Source</option>
                         </select>
-                        <label for="feature">What would you like to see improved? (Check all that apply)</label>
+                        <label for="feature" class="pt-5">What would you like to see improved? (Check all that apply)</label>
                         <div class="flex items-center space-x-1">
                             <input type="checkbox" id="frontend" name="frontend" value="frontend">
                             <label for="frontend">Front-end Projects</label>
@@ -103,11 +103,11 @@
                             <input type="checkbox" id="additional" name="additional" value="additional">
                             <label for="additional">Additional Courses</label>
                         </div>
-                        <label for="additional">Any comments or suggestions?</label>
+                        <label for="additional" class="pt-3">Any comments or suggestions?</label>
                         <textarea class="py-5 text-black rounded-md" type="textarea" id="name" required
                             placeholder="Enter Your Coment here.."></textarea>
                         <div class="flex-col flex mt-5">
-                            <input type="submit" value="Submit" id="submit" class="bg-green-400 py-2  rounded-md mt-5">
+                            <input type="submit" value="Submit" id="submit" class="bg-green-400 py-2 hover:bg-green-500 rounded-md mt-5">
                         </div>
                     </form>
                 </div>
